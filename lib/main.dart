@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import './screens/homeScreen.dart';
+
+import './config/constants.dart';
+
 class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
@@ -11,6 +15,22 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: "Food App",
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: "Poppins",
+        scaffoldBackgroundColor: kWhiteColor,
+        primaryColor: kPrimaryColor,
+        textTheme: TextTheme(
+          headline4: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+          headline5: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+          button: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
       home: FoodApp(),
     );
   }
@@ -19,7 +39,9 @@ class _MyAppState extends State<MyApp> {
 class FoodApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: HomeScreen(),
+    );
   }
 }
 
