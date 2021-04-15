@@ -29,6 +29,9 @@ class _MyAppState extends State<MyApp> {
           button: TextStyle(
             fontWeight: FontWeight.bold,
           ),
+          bodyText1: TextStyle(
+            color: kTextColor,
+          ),
         ),
       ),
       home: FoodApp(),

@@ -37,6 +37,7 @@ class FoodItems extends StatelessWidget {
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
           calories: 420,
           price: 20,
+          onPressed: () {},
         ),
         FoodCard(
           title: "Vegan salad bowl",
@@ -46,6 +47,7 @@ class FoodItems extends StatelessWidget {
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
           calories: 420,
           price: 20,
+          onPressed: () {},
         ),
         SizedBox(
           width: 20.0,
